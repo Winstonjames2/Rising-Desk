@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'); */
 
 *{
     margin:0;
@@ -55,6 +55,11 @@ ul{
     list-style-type: none;
 }
 
+p::before{
+    content: ' ';
+    margin: 2vw;
+}
+
 .main-header{
     width: 100%;
     height: 60px;
@@ -89,25 +94,40 @@ ul{
 
 .first-container{
     position: relative;
-}
-
-.intro-wrapper{
-    float: left;
-    width: 50%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .std_img-wrapper{
-    width: 300px;
-    height:300px;
+    width: 60%;
+    overflow: hidden;
+    text-align: center;
     transform: rotate(45deg);
-    display: inline-block;
-    /* grid-template-columns: auto auto; */
-    background-color: blue;
-    position: relative;
-    /* overflow: hidden; */
 }
 
-.std_img{
-    width: 200px;
+.std_img1, .std_img2, .std_img3, .std_img4{
     transform: rotate(-45deg);
+}
+
+.std_img1{
+    width: 16vw;
+}
+
+.std_img2{
+    width: 9vw;
+}
+
+.std_img3{
+    width: 13vw;
+}
+
+.std_img4{
+    width: 14.5vw;
+}
+
+.intro-wrapper{
+    width: 40%;
 }
