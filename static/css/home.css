@@ -1,0 +1,97 @@
+/* first-container section */
+.first-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.std_img-wrapper{
+    width: 60%;
+    overflow: hidden;
+    text-align: center;
+    transform: rotate(45deg);
+}
+
+.std_img1, .std_img2, .std_img3, .std_img4{
+    transform: rotate(-45deg);
+}
+
+.std_img1{
+    width: 16vw;
+}
+
+.std_img2{
+    width: 9vw;
+}
+
+.std_img3{
+    width: 13vw;
+}
+
+.std_img4{
+    width: 14.5vw;
+}
+
+.intro-wrapper{
+    width: 40%;
+    text-align: center;
+    background-color: var(--fg-color);
+    height: inherit;
+    display: grid;
+    place-content: center;
+}
+
+#intro-header{
+    font-size: 2.5vw;
+}
+
+.intro-text{
+    font-size: 1.2vw;
+    width: 90%;
+    margin: auto;
+    top: 50%;
+}
+
+/* second-container section */
+.second-container{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.second-container-text{
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--fg-color);
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.second-container-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-around;
+
+}
+
+.second-container-text>section{
+    width: 50%;
+}
+
+.second-container-text>section>p{
+    margin-top:20px;
+}
+
+.second-container-text>section>p::before{
+    content: none;
+}
+
+.std_imgsp{
+    width:300px;
+}

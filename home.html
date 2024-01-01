@@ -6,12 +6,13 @@
         <title>Standing Desk Company</title>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />
         <link rel="stylesheet" href="static/css/style.css"/>
+        <link rel="stylesheet" href="static/css/home.css"/>
     </head>
     <body>
         <!-- Header Section -->
         <header class="main-header">
-            <section style="height: 100%;">
-                <img id="std_logo" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+            <section>
+                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
             </section>
             
             <!-- Navigation Bar -->
@@ -30,7 +31,8 @@
             </section>
         </header>
 
-        <!-- Main Content Section - Home Page -->
+
+        <!-- First Container Section -->
         <section class="first-container">
             <div class="std_img-wrapper">
                 <img src="static/img/std_img1.jpg" class="std_img1" alt="standing desk image 1"/>
@@ -39,8 +41,8 @@
                 <img src="static/img/std_img4.jpg" class="std_img4" alt="standing desk image 3"/>
             </div>
             <div class="intro-wrapper">
-                <h1>Welcome to Standing Desk Company (SDC)</h1>
-                <p>At Standing Desk Company, we believe in transforming your workspace into a haven of comfort, productivity, and well-being. As pioneers in ergonomic solutions, 
+                <h1 id="intro-header">Welcome to<br/> Standing Desk Company (SDC)</h1>
+                <p class="intro-text">At Standing Desk Company, we believe in transforming your workspace into a haven of comfort, productivity, and well-being. As pioneers in ergonomic solutions, 
                     we are delighted to welcome you to a world where innovation meets design, and health meets functionality.</p>
                 
                 <!-- <h3>Special Offers Just for You</h3>
@@ -49,35 +51,60 @@
                      create a workspace that reflects your commitment to both comfort and performance.</p> -->
             </div>
         </section>
-        
 
-        <!-- Main Content Section - Health Benefits -->
-        <section>
-            <h2>Health Benefits</h2>
-            <p>Discover the perfect blend of style and wellness as you explore our curated collection of standing desks. Elevate your work experience with our 
-                innovative solutions designed for modern professionals like you. We understand the importance of a dynamic and comfortable workspace, 
-                and that's why we bring you a range of standing desks that not only meet your functional needs but also contribute to your overall health and vitality.</p>
-
-            <div>
-                <div>
-                    <p>Learn about the positive impact of using standing desks on your health and well-being.</p>
-                    <img src="static/img/health_benefits_image1.jpg" alt="Health Benefits Example 1">
-                </div>
-                <div>
-                    <p>Improve posture, reduce back pain, and increase energy levels with our standing desks.</p>
-                    <img src="static/img/health_benefits_image2.jpg" alt="Health Benefits Example 2">
-                </div>
+        <!-- Second Container Section -->
+        <section class="second-container">
+            <h2>Unlock a Healthier You</h2>
+            <p>Welcome to a world where your workspace not only fuels productivity but also nurtures your well-being. Our standing desks are more than pieces of furniture; they are your gateway to a healthier lifestyle.<br/>Here's how:</p>
+            
+            <div class="second-container-text">
+                <section>
+                    <p><b>Revitalize Your Posture:</b> Elevate your work experience and bid farewell to slouching. Our standing desks promote optimal posture, reducing strain on your back and neck.</p>
+                    <p><b>Banish Back Pain:</b> Embrace a pain-free workday as our desks provide the support your spine deserves. Experience the joy of reduced back pain and improved comfort.</p>
+                    <p><b>Boost Energy and Focus:</b> Stay energized throughout the day! Our standing desks keep you on your feet, invigorating your body and mind for heightened productivity.</p>
+                </section>
+                <img class="std_imgsp" src="static/img/std_imgsp1.webp" alt="Health Benefits Example 1">
             </div>
         </section>
-
+        
+        
         <!-- Footer Section -->
-        <footer>
-            <!-- Social Media Links -->
-            <ul class="social-media">
-                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
-                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
-                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
-            </ul>
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="static/img/company_logo.png" alt="Company Logo">
+                    <img class="footer-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk footer"/>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rising_desks.html">Rising Desks</a></li>
+                        <li><a href="health_benefits.html">Health Benefits</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <ul class="social-media">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2024 Standing Desk Company. All rights reserved. | Powered by <a href="https://github.com/Winstonjames2" target="_blank">Kyaw Htet Myat Tun</a></span>
+            </div>
         </footer>
+
     </body>
 </html>

@@ -9,9 +9,10 @@
 :root{
     --font-family: 'Raleway', sans-serif;
     --font-color: rgb(0, 0, 0);
-    --fg-color: rgb(240, 240, 240);
+    --fg-color: rgb(238,238,238);
     --bg-color: white;
     --hover_color: rgb(22, 22, 111);
+    --transition-duration: 600ms;
 }
 
 body{
@@ -24,10 +25,11 @@ body{
 }
 
 a{
-    color: var(--font-color);
+    color: var(--fg-color);
     text-decoration: none;
     position: relative;
     padding: 5px 0;
+    transition: linear var(--transition-duration);
 }
 
 a:hover{
@@ -44,7 +46,7 @@ a:hover{
     bottom: 0;
     left: 50%; /* Start from the center */
     transform: translateX(-50%);
-    transition: width 0.5s ease; /* Transition for smooth effect */
+    transition: width var(--transition-duration) ease; /* Transition for smooth effect */
 }
 
 .bar:hover::before {
@@ -53,6 +55,11 @@ a:hover{
 
 ul{    
     list-style-type: none;
+}
+
+p{
+    line-height: 1.5;
+    text-align: justify;
 }
 
 p::before{
@@ -75,7 +82,11 @@ p::before{
     z-index:10;
 }
 
-#std_logo{
+.main-header section:first-child{
+    height: 100%;
+}
+
+.header-std_txt_img{
     height: 100%;
 }
 
@@ -84,50 +95,62 @@ p::before{
     flex-direction: row;
 }
 
-.nav-links-wrapper>*{
+.nav-links-wrapper>li{
     margin: 0 1.5vw;
+}
+
+.nav-links-wrapper>li>a{
+    color: black;
 }
 
 #search-icon-btn{
     margin:20px;
+    
 }
 
-.first-container{
+.footer-container {
+    background-image: linear-gradient(rgba(182, 182, 182, 0.79),rgba(0, 0, 0, 0.803) 80%), url("../img/footer_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    color: var(--fg-color);
+    padding: 20px; /* Add padding for better spacing */
     position: relative;
-    width: 100%;
-    height: 100vh;
+}
+
+.footer-content {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
 }
 
-.std_img-wrapper{
-    width: 60%;
-    overflow: hidden;
+.footer-section {
+    text-align: left;
+}
+
+.footer-section img {
+    max-width: 200px; /* Adjust the size of the logo */
+}
+
+.footer-section h3 {
+    color: var(--fg-color);
+    margin-bottom: 10px;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
     text-align: center;
-    transform: rotate(45deg);
-}
-
-.std_img1, .std_img2, .std_img3, .std_img4{
-    transform: rotate(-45deg);
-}
-
-.std_img1{
-    width: 16vw;
-}
-
-.std_img2{
-    width: 9vw;
-}
-
-.std_img3{
-    width: 13vw;
-}
-
-.std_img4{
-    width: 14.5vw;
-}
-
-.intro-wrapper{
-    width: 40%;
+    background-color: black;
+    color: var(--fg-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 7px;
 }
