@@ -131,7 +131,7 @@ p::before{
     margin: 20px;
 }
 
-#search-icon-btn>label{
+#search-icon-btn .search-icon {
     cursor: pointer;
 }
 
@@ -170,10 +170,11 @@ p::before{
     cursor: pointer;
 }
 
-#search-toggle:checked + label + #search-dropdown {
+#search-toggle:checked + .search-icon + #search-dropdown {
     display: block;
 }
 
+/* footer container */
 
 .footer-container {
     background-image: linear-gradient(rgba(182, 182, 182, 0.79),rgba(0, 0, 0, 0.803) 80%), url("../img/footer_img.jpg");
