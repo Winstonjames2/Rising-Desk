@@ -55,43 +55,89 @@
     top: 50%;
 }
 
-/* second-container section */
-.second-container{
+/* body container  */
+
+.body-container {
     width: 80%;
-    margin: 50px auto;
+    margin: 120px auto;
     text-align: center;
 }
 
-.second-container-text{
+.body-container-text {
     margin: 10px;
     padding: 10px;
     background-color: var(--fg-color);
-    display: grid;
-    grid-template-rows: auto auto;
-}
-
-.second-container-text{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
     justify-content: space-around;
+    min-height: 450px;
 
 }
 
-.second-container-text>section{
-    width: 50%;
+.body-container-text>section {
+    width: 55%;
+    margin-right: 20px;
+    align-self: center;
 }
 
-.second-container-text>section>p{
-    margin-top:20px;
+.body-container-text>section>p {
+    margin-top: 20px;
 }
 
-.second-container-text>section>p::before{
+.body-container-text>section>p::before {
     content: none;
 }
 
-.std_imgsp{
-    width:300px;
+.body-container-img {
+    width: 300px;
+    height: 400px;
+    align-self: center;
 }
+
+.body-container{
+    h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    p {
+        line-height: 1.5;
+        text-align: justify;
+        margin-top: 20px;
+    }
+}
+
+/* Fifth Container - Featured Standing Desks */
+.featured-container {
+    width: 80%;
+    margin: 100px auto;
+    position: relative;
+}
+
+.featured-container h2{
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-desk-wrapper{
+    margin: 25px 0;
+}
+
+.featured-title {
+    text-align: right;
+    height: 60px;
+}
+
+.featured-title>h3 {
+    background-color: #28a745;
+    float: right;
+    padding: 8px;
+    margin: 8px;
+
+}
+
+.price-info{
+    text-align: center;
+}
+

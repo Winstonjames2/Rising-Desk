@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
 *{
     margin:0;
@@ -22,17 +22,18 @@ body{
     word-spacing: 3px;
     letter-spacing: 0.5px;
     font-size: 1em;
+    overflow-x: hidden;
 }
 
 a{
-    color: var(--fg-color);
+    color: black;
     text-decoration: none;
     position: relative;
     padding: 5px 0;
     transition: linear var(--transition-duration);
 }
 
-a:hover{
+a:hover {
     color: var(--hover_color);
 }
 
@@ -74,7 +75,7 @@ p::before{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 1.5vw;
     position: sticky;
     top:0;
     background-color: var(--bg-color);
@@ -99,14 +100,80 @@ p::before{
     margin: 0 1.5vw;
 }
 
-.nav-links-wrapper>li>a{
-    color: black;
+.header-dropdown{
+    position: relative;
+    cursor: pointer;
 }
 
-#search-icon-btn{
-    margin:20px;
-    
+.account-menu,
+.basket-menu {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    text-wrap: nowrap;
+    font-size: 1vw;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity var(--transition-duration);
 }
+
+.header-dropdown:hover .account-menu ,
+.header-dropdown:hover .basket-menu {
+    opacity: 1;
+    z-index: 3;
+}
+
+#search-icon-btn {
+    position: relative;
+    margin: 20px;
+}
+
+#search-icon-btn>label{
+    cursor: pointer;
+}
+
+#search-toggle {
+    display: none;
+}
+
+#search-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 50px;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.search-container {
+    display: flex;    
+}
+
+#search-box {
+    cursor: pointer;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search-toggle:checked + label + #search-dropdown {
+    display: block;
+}
+
 
 .footer-container {
     background-image: linear-gradient(rgba(182, 182, 182, 0.79),rgba(0, 0, 0, 0.803) 80%), url("../img/footer_img.jpg");
@@ -127,11 +194,16 @@ p::before{
     padding: 20px;
 }
 
-.footer-section {
-    text-align: left;
+.footer-section-img-wrapper{
+    align-self: center;
 }
 
-.footer-section img {
+.footer-section {
+    text-align: left;
+    margin: 10px;
+}
+
+.footer-section-img-wrapper img {
     max-width: 200px; /* Adjust the size of the logo */
 }
 
@@ -141,7 +213,15 @@ p::before{
 }
 
 .footer-section ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section a{
+    color: var(--bg-color);
+}
+
+.footer-section a:hover{
+    color: var(--hover_color)
 }
 
 .footer-bottom {
@@ -153,4 +233,72 @@ p::before{
     left: 0;
     right: 0;
     padding: 7px;
+}
+
+/* desk items */
+.desk-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.desk-items>section{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.desk-items img{    
+    width: 300px;
+    height: auto;
+}
+
+.image-container{
+    max-width: 300px;
+    height: 280px;
+    overflow: hidden;
+}
+
+.desk-info{
+    text-align: center;
+}
+
+.price-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    place-items: center;
+    height: 100px;
+    background-color: var(--fg-color);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.price{
+    color: red;
+    font-weight: bold;
+}
+
+.desk-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Adjust the number of lines to show */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    grid-column: span 2;
+    font-size: 0.9em;
+}
+
+.desk-content::before{
+    margin: 10px;
+}
+
+.review-star>span{
+    font-size:1em;
+}
+
+.review-star>span {
+    fill: blue;
+    color: blue;
+    /* background-color: blue;; */
 }
