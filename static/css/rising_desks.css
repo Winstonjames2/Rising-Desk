@@ -1,0 +1,82 @@
+/* Styling for rising desks html */
+
+.main-header {
+    position: relative;
+}
+
+.first-container {
+    position: relative;
+    margin: 60px auto;
+    width: 80%;
+}
+
+.second-container {
+    position: relative;
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+.filter-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    width: 100%;
+    
+}
+
+#filter-btn {
+    
+    padding: 7px;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    border: 1px solid black;
+    
+}
+
+#filter-btn:hover{
+    background-color: #2ecc71;
+}
+
+#desk_type1-container,
+#desk_type2-container,
+#desk_type3-container {
+    display: none;
+}
+
+#desk_type1:checked ~ #desk_type1-container,
+#desk_type2:checked ~ #desk_type2-container,
+#desk_type3:checked ~ #desk_type3-container {
+    display: block;
+}
+
+.second-container label {
+    background-color: var(--fg-color);
+    font-weight: bold;
+    margin: 5px;
+    cursor: pointer;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    transition: all var(--transition-duration);
+}
+
+.second-container label:hover {
+    background-color: var(--hover_color);
+    color: var(--fg-color);
+}
+
+#desk_type1,
+#desk_type2,
+#desk_type3 {
+    display: none;
+}
+
+#desk_type1:checked + label,
+#desk_type2:checked + label,
+#desk_type3:checked + label {
+    background-color: #2ecc71; /* Change to your desired active color */
+    color: #fff;
+}

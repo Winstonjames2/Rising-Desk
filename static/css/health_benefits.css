@@ -1,0 +1,32 @@
+/* Add your existing styles here */
+
+/* Health Benefits Styles */
+.health-benefits-container {
+    width: 80%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.health-benefit {
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+}
+
+.health-benefit img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.health-benefit-content {
+    margin-top: 20px;
+}
+
+.health-benefit-content h2 {
+    color: #333;
+}
+
+.health-benefit-content p {
+    color: #666;
+}

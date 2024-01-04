@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Standing Desk Company</title>
+        <link rel="stylesheet" href="static/css/style.css"/>
+        <link rel="stylesheet" href="static/css/rising_desks.css"/>
+        <script src="static/icon_folder/all.min.js"></script>      <!-- font awesome for icon more info -- > https://fontawesome.com -->
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="main-header">
+            <section>
+                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+            </section>
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links-wrapper">
+                    <li><a class="bar" href="home.html">Home</a></li>
+                    <li class="header-dropdown"><a class="bar" href="rising_desks.html">Rising Desks</a>
+                        <ul class="rising-menu">
+                            <li><a href="rising_desks.html">Electric Standing Desks</a></li>
+                            <li><a href="rising_desks.html">Convertible Desk Riser</a></li>
+                            <li><a href="rising_desks.html">Wall-Mounted Standing Desks</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="bar" href="health_benefits.html">Health Benefits</a></li>
+                    <li><a class="bar" href="contact_us.html">Contact Us</a></li>
+                    <li><a class="bar" href="basket.html">Basket</a></li>
+                </ul>
+            </nav>
+
+            <section class="header-dropdown">
+                    <a class="bar account_redirect_btn">Account</a>
+                    <ul class="account-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Register</a></li>
+                    </ul>
+            </section>
+
+            <section id="search-icon-btn">
+                <input type="checkbox" id="search-toggle">
+                <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <div id="search-dropdown">
+                    <div class="search-container">
+                        <input type="text" id="search-box" placeholder="Type your search...">
+                        <button type="submit" class="search-button">Search</button>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <!-- body container -->
+        <section class="body-container">
+            <!-- First Container Section -->
+            <section class="first-container">
+                <h1 id="intro-header">Explore Our Rising Desks Collection</h1>
+                <p class="intro-text">Discover a wide range of rising desks designed to elevate your work experience. Whether you're looking for ergonomic solutions,
+                    adjustable features, or stylish designs, our collection has it all. Explore the perfect blend of functionality and comfort with our rising desks.</p>
+            </section>
+
+            <!-- Second Container Section -->
+            <section class="second-container">
+                <aside class="filter-container">
+                    <button id="filter-btn" ><i class="fa-solid fa-filter"></i> Filter</button>
+                    <div class="filter-box">
+                        
+                    </div>
+                </aside><br/><br/><br/>
+                <input type="radio" id="desk_type1" checked name="desk_type"><label for="desk_type1">Electric Desks</label>
+                <input type="radio" id="desk_type2" name="desk_type"><label for="desk_type2">Convertible Desk Riser</label>
+                <input type="radio" id="desk_type3" name="desk_type"><label for="desk_type3">Wall-Mounted Desks</label>
+                <br/><br/><br/><br/>
+                <section id="desk_type1-container">
+                    <div class="desk-items">
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Modern Ergonomic Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk1.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>NSdirect Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </div>
+                                    <p class="desk-content">Electric 60"W Height-Adjustable Standing Desk with Wireless Charging, Black</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container s_img"><img src="static/img/desk2.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Erogant Vibe</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Precision Standing Desk Multipurpose Desktop Riser, 6.2" x 42" x 23.2", Black</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container s_img"><img src="static/img/desk.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Modern Ergonomic Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk1.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>NSdirect Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                    </div>
+                                    <p class="desk-content">Electric 60"W Height-Adjustable Standing Desk with Wireless Charging, Black</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk2.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Erogant Vibe</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Precision Standing Desk Multipurpose Desktop Riser, 6.2" x 42" x 23.2", Black</p>
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                </section>
+                
+                <section id="desk_type2-container">                
+                    <div class="desk-items">
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk3.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>KKL</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">48-inch Height Adjustable Electric Standing Desk</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk4.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Semi Star Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk5.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Modern Ergonomic Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Electric Standing Dp with Double Drawers Height Adjustable 55"x28" Stand Up Desk with Monitor Shelf, Vintage Brown</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk3.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>KKL</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">48-inch Height Adjustable Electric Standing Desk</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk4.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Semi Star Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img src="static/img/desk5.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Modern Ergonomic Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                    <p class="desk-content">Electric Standing Dp with Double Drawers Height Adjustable 55"x28" Stand Up Desk with Monitor Shelf, Vintage Brown</p>
+                                </div>
+                            </section>
+                        </a>
+                    </div>
+                </section>
+                    <section class="desk_type3-container">
+                        <div class="desk-items">
+                            <a class="section" href="item.html">
+                                <div class="image-container"><img src="static/img/desk6.jpg" alt="Standing Desk"></div>
+                                <section class="desk-info">
+                                    <h4>Growing D Desk</h4>
+                                    <div class="price-info">
+                                        <div class="price">$499.99</div>
+                                        <div class="review-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                    </div>
+                                </section>
+                            </a>
+                            <a class="section" href="item.html">
+                                <div class="image-container"><img src="static/img/desk7.jpg" alt="Standing Desk"></div>
+                                <section class="desk-info">
+                                    <h4>GPP D Desk</h4>
+                                    <div class="price-info">
+                                        <div class="price">$499.99</div>
+                                        <div class="review-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                    </div>
+                                </section>
+                            </a>
+                            <a class="section" href="item.html">
+                                <div class="image-container"><img src="static/img/desk8.jpg" alt="Standing Desk"></div>
+                                <section class="desk-info">
+                                    <h4>Smiley Cryo</h4>
+                                    <div class="price-info">
+                                        <div class="price">$499.99</div>
+                                        <div class="review-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star-half-stroke"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                        <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                    </div>
+                                </section>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section-img-wrapper">
+                    <img src="static/img/std_logo.jpg" alt="Company Logo">
+                    <img src="static/img/std_logo.jpg" alt="Standing Desk footer"/>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rising_desks.html">Rising Desks</a></li>
+                        <li><a href="health_benefits.html">Health Benefits</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <ul class="social-media">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom footer-section">
+                <span>&copy; 2024 Standing Desk Company. All rights reserved. | Powered by <a href="https://github.com/Winstonjames2" target="_blank">Kyaw Htet Myat Tun</a></span>
+            </div>
+        </footer>
+
+    </body>
+</html>
