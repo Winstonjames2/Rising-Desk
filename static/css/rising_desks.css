@@ -37,7 +37,7 @@
 }
 
 #filter-btn:hover{
-    background-color: #2ecc71;
+    background-color: var(--green);
 }
 
 #desk_type1-container,
@@ -77,6 +77,6 @@
 #desk_type1:checked + label,
 #desk_type2:checked + label,
 #desk_type3:checked + label {
-    background-color: #2ecc71; /* Change to your desired active color */
-    color: #fff;
+    background-color: var(--green); /* Change to your desired active color */
+    color: var(--bg-color);
 }

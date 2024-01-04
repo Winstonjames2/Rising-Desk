@@ -132,7 +132,7 @@
 }
 
 .featured-title>h3 {
-    background-color: #28a745;
+    background-color: var(--green);
     float: right;
     padding: 8px;
     margin: 8px;
