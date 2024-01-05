@@ -12,61 +12,84 @@
     padding: 5px 0;
 }
 
-/*  */
-/* Add your global styles here */
+/*  fist container section */
 
-/* Video Container Styles */
-.vd-container {
-    max-width: 640px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 30px;
+.first-container {
+    width: 100%;
+    height: 90vh;
     position: relative;
 }
 
-/* Thumbnail Label Styles */
-label {
+.vd-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+#unmute-btn {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    right: 10px;
+    background-color: rgb(55, 150, 188);
+    color: var(--fg-color);
+    padding: 8px;
+    cursor: pointer;
+    border: 1px solid black;
+    z-index: 10;
+    font-size: 1em;
+    border-radius: 2px;
+}
+
+#unmute-btn:hover {
+    background-color: rgb(33, 127, 163);
+    color: rgb(130, 130, 130);
+}
+
+/* second container section */
+
+.second-container {
+    width: 90%;
+    background-color: var(--bg-color);
+    margin: 80px auto;
+    border-radius: 2%;
+    text-align: center;
+    padding: 20px;
+}
+
+.second-container h1 {
+    font-size: 1.5em;
+    margin: 20px;
+    margin-top: 50px;
+}
+
+.second-sub-container {
+    display: flex;
+    flex: row;
+    justify-content: space-around;
+    
+}
+
+.second-sub-container img{
+    max-width: 30%;
+
+}
+
+.benefit-fact-wrapper {
+    width: fit-content;
+    margin: auto;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.benefit-fact-wrapper a {
+    margin: 12px;
     display: block;
+    width: fit-content;
+    padding-bottom: 3px;
     cursor: pointer;
 }
 
-label[for="video-checkbox"] img {
-    max-width: 100%;
-}
-
-#thumb-mask {
-    width: 640px;
-    height: 360px;
-    background-color: #3333335e;
-    position: absolute;
-    top: 0;
-    border-radius: 5px;
-    transition: all var(--transition-duration);
-}
-
-#thumb-mask:hover {
-    background-color: #333333b0;
-    box-shadow: 0 0 4px 3px #333333b0;
-}
-
-/* Hide the video iframe initially */
-#video-checkbox {
-    display: none;
-}
-
-iframe{
-    display: none;
-    position: absolute;
-    top: 0;
-    border-radius: 5px;
-}
-
-/* Show the video iframe when the checkbox is checked */
-#video-checkbox:checked + label + iframe {
-    display: block;
-}
-
-/*  */
+/* health benefits container section */
 
 .health-benefits-container {
     width: 90%;
