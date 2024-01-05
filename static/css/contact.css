@@ -1,0 +1,161 @@
+/* Add your global styles here */
+
+/* Body Container Styles */
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light gray background color */
+}
+
+/* Contact Information Section Styles */
+.contact-info {
+    max-width: 800px;
+    width: 100%;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.hotlines {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotline {
+    flex: 1;
+}
+
+/* Newsletter and Social Media Section Styles */
+.newsletter-social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    width: 80%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter,
+.social-media {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.newsletter h2,
+.social-media h2 {
+    color: #333;
+}
+
+.newsletter p,
+.social-media p {
+    color: #666;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    padding: 10px;
+    background-color: #4caf50; /* Green button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Contact Us Section Styles */
+.contact-form-container {
+    max-width: 800px;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h1 {
+    color: #333;
+}
+
+.contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #4caf50; /* Green button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Give Us Feedback and FAQ Section Styles */
+.feedback-form-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.feedback-form-container h2 {
+    color: #333;
+}
+
+.feedback-form {
+    display: grid;
+    gap: 20px;
+}
+
+.faq {
+    color: #666;
+}
