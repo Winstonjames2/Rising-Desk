@@ -2,65 +2,70 @@
 
 /* Body Container Styles */
 .body-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4; /* Light gray background color */
+    width: 100%;
+    background-color: var(--fg-color);
+    font-size: 1em;
 }
 
 /* Contact Information Section Styles */
 .contact-info {
-    max-width: 800px;
+    background-image: linear-gradient(rgba(198, 198, 198, 0.451), rgba(60, 60, 60, 0.516)), url("../img/contact_bg.png");
     width: 100%;
-    margin-top: 30px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-info h2 {
-    color: #333;
-}
-
-.hotlines {
+    height: 95vh;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.hotline {
-    flex: 1;
+.contact-info>h2 {
+    margin: 10px;
 }
 
-/* Newsletter and Social Media Section Styles */
-.newsletter-social-media {
+.hotlines{
     display: flex;
+    flex-direction: column;
+    background-color: var(--fg-color);
+    padding: 5px; 
+    border-radius: 3px;
+    width: 250px;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+}
+
+.hotline a {
+    margin-left: 20px;
+
+}
+
+/* first container */
+.first-container {
+    width: 100%;
+    background-color: var(--fg-color);
+}
+
+/* Newsletter section */
+.newsletter, .contact-social-media, .quick-ask-container {
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
     max-width: 800px;
     width: 80%;
-    margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.newsletter,
-.social-media {
-    background-color: #fff;
+    margin: 60px auto;
     padding: 20px;
     border-radius: 8px;
+    background-color: var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.newsletter h2,
-.social-media h2 {
-    color: #333;
+.contact-social-media {
+    text-align: center;
 }
 
 .newsletter p,
-.social-media p {
-    color: #666;
+.contact-social-media p {
+    color: rgb(141, 141, 141);
 }
 
 .newsletter-form {
@@ -71,7 +76,7 @@
 .newsletter-form input {
     flex: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--fg-color);
     border-radius: 4px;
 }
 
@@ -84,32 +89,6 @@
     cursor: pointer;
 }
 
-.social-icons {
-    display: flex;
-    gap: 10px;
-}
-
-.social-icons img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-/* Contact Us Section Styles */
-.contact-form-container {
-    max-width: 800px;
-    width: 100%;
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form-container h1 {
-    color: #333;
-}
-
 .contact-form {
     display: grid;
     gap: 20px;
@@ -117,33 +96,58 @@
 
 .contact-form label {
     font-weight: bold;
+    margin: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
+input, textarea {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(177, 177, 177);
     border-radius: 4px;
+    appearance: none;
+    padding: 6px 8px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    resize: none;
+    outline: none;
 }
 
-.contact-form button {
+input:focus, textarea:focus {
+    border: 1px solid var(--green);
+    
+}
+
+.form-row {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form button, .feedback-form button {
     padding: 10px;
-    background-color: #4caf50; /* Green button color */
-    color: #fff;
+    background-color: var(--green);
+    color: var(--bg-color);
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+}
+
+/* second container */
+.second-container {
+    width: 100%;
+    background-color: var(--bg-color);
 }
 
 /* Give Us Feedback and FAQ Section Styles */
 .feedback-form-container {
-    max-width: 800px;
-    width: 100%;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
     margin-bottom: 30px;
 }
 
@@ -156,6 +160,25 @@
     gap: 20px;
 }
 
-.faq {
-    color: #666;
+.resource {
+    width: 80%;
+    margin: 100px auto;
+}
+
+.resources-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+.resources-wrapper li {
+    text-align: center;
+}
+
+.icon {
+    font-size: 4em;
 }

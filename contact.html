@@ -1,183 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Standing Desk Company</title>
+        <link rel="stylesheet" href="static/css/style.css"/>
+        <link rel="stylesheet" href="static/css/contact.css"/>
+        <script src="static/icon_folder/all.min.js"></script>      <!-- font awesome for icon more info -- > https://fontawesome.com -->
+    </head>
+    <body>
+        <!-- Header Section -->
+        <header class="main-header">
+            <section>
+                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+            </section>            
+            
+            <!-- Navigation Bar -->
+            <nav>
+                <ul class="nav-links-wrapper">
+                    <li><a class="bar" href="home.html">Home</a></li>
+                    <li class="header-dropdown"><a class="bar" href="rising_desks.html">Rising Desks</a>
+                        <ul class="rising-menu">
+                            <li><a href="rising_desks.html">Electric Standing Desks</a></li>
+                            <li><a href="rising_desks.html">Convertible Desk Riser</a></li>
+                            <li><a href="rising_desks.html">Wall-Mounted Standing Desks</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="bar" href="health_benefits.html">Health Benefits</a></li>
+                    <li><a class="bar" href="contact.html">Contact Us</a></li>
+                    <li><a class="bar" href="basket.html">Basket</a></li>
+                </ul>
+            </nav>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Standing Desk Company</title>
-    <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/contact.css" />
-    <script src="static/icon_folder/all.min.js"></script>
-    <!-- font awesome for icon more info -- > https://fontawesome.com -->
-</head>
+            <section class="header-dropdown">
+                    <a class="bar account_redirect_btn">Account</a>
+                    <ul class="account-menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="signup.html">Register</a></li>
+                    </ul>
+            </section>
 
-<body>
-    <!-- Header Section -->
-    <header class="main-header">
-        <section>
-            <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header" />
-        </section>
-
-        <!-- Navigation Bar -->
-        <nav>
-            <ul class="nav-links-wrapper">
-                <li><a class="bar" href="home.html">Home</a></li>
-                <li><a class="bar" href="rising_desks.html">Rising Desks</a></li>
-                <li><a class="bar" href="health_benefits.html">Health Benefits</a></li>
-                <li><a class="bar" href="contact.html">Contact Us</a></li>
-                <li><a class="bar basket-btn">Basket</a></li>
-            </ul>
-        </nav>
-
-        <section class="header-dropdown">
-            <a class="bar account_redirect_btn">Account</a>
-            <ul class="account-menu">
-                <li><a href="login.html">Login</a></li>
-                <li><a href="signup.html">Register</a></li>
-            </ul>
-        </section>
-
-        <section id="search-icon-btn">
-            <input type="checkbox" id="search-toggle">
-            <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
-            <div id="search-dropdown">
-                <div class="search-container">
-                    <input type="text" id="search-box" placeholder="Type your search...">
-                    <button type="submit" class="search-button">Search</button>
+            <section id="search-icon-btn">
+                <input type="checkbox" id="search-toggle">
+                <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                <div id="search-dropdown">
+                    <div class="search-container">
+                        <input type="text" id="search-box" placeholder="Type your search...">
+                        <button type="submit" class="search-button">Search</button>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </header>
+            </section>
+        </header>
         <!-- Body Container -->
         <section class="body-container">
 
             <!-- Contact Information Section -->
             <div class="contact-info">
-                <h2>Contact Information</h2>
+                <h2>Contact Us</h2>
                 <!-- Add your contact information here -->
                 <div class="hotlines">
                     <div class="hotline">
-                        <h3>Hotline 1</h3>
-                        <p>+123 456 789</p>
-                    </div>
+                        <h3>Sale Service</h3>
+                        <span>+123 456 789 <a class="bar" href="tel:+1234567890"><i class="fa-solid fa-phone"></i></a></span>
+                    </div><br/>
                     <div class="hotline">
-                        <h3>Hotline 2</h3>
-                        <p>+987 654 321</p>
+                        <h3>Customer Service</h3>
+                        <span>+987 654 321 <a class="bar" href="tel:+987 654 321"><i class="fa-solid fa-phone"></i></a></span>
                     </div>
                 </div>
             </div>
-    
-            <!-- Subscribe Newsletter Section -->
-            <div class="newsletter-social-media">
-                <div class="newsletter" style="width: 80%;">
-                    <h2>Subscribe to Newsletter</h2>
+            
+            <!-- sub container section -->
+            <section class="first-container">
+                
+                <!-- Subscribe Newsletter Section -->            
+                <div class="newsletter">
+                    <h2>Subscribe to Ours Newsletter</h2>
                     <p>Stay updated with our latest news and offers.</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Your email">
                         <button type="submit">Subscribe</button>
                     </form>
                 </div>
-                
-                <!-- Social Media Section -->
-                <div class="social-media" style="width: 20%;">
-                    <h2>Follow Us</h2>
-                    <p>Connect with us on social media for updates.</p>
-                    <!-- Add your social media links here -->
-                    <div class="social-icons">
-                        <a href="#" target="_blank"><img src="social_icons/facebook.png" alt="Facebook"></a>
-                        <a href="#" target="_blank"><img src="social_icons/twitter.png" alt="Twitter"></a>
-                    </div>
+
+                <div class="contact-social-media">
+                    <h2>Keep Contacting With Us</h2><br/>
+                    <a target="_blank" href="https://wwww.facebook.com"><i class="fa-brands fa-facebook"></i> Standing Desk Company</a><br/>
+                    <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i> Stading Desk Company</a>
                 </div>
-            </div>
-    
-            <!-- Contact Us Section -->
-            <div class="contact-form-container">
-                <h1>Contact Us</h1>
-                <form class="contact-form">
-                    <!-- Add your contact form fields here -->
-                    <div class="form-row">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-row">
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-    
-            <!-- Give Us Feedback and FAQ Section -->
-            <div class="feedback-form-container">
-                <h2>Give Us Feedback</h2>
-                <form class="feedback-form">
-                    <!-- Add your feedback form fields here -->
-                    <div class="form-row">
-                        <label for="feedback">Your Feedback:</label>
-                        <textarea id="feedback" name="feedback" rows="4" required></textarea>
-                    </div>
-                    <button type="submit">Submit Feedback</button>
-                </form>
-    
-                <h2>FAQ</h2>
-                <!-- Add your FAQ content here -->
-                <div class="faq">
-                    <p>Q: How can I track my order?</p>
-                    <p>A: You can track your order by visiting the "Order Tracking" section in your account.</p>
-                    <!-- Add more FAQ items as needed -->
+                    
+                <!-- Send us quick message -->
+                <div class="quick-ask-container">
+                    <h2>Quick Ask</h2>
+                    <form class="contact-form">
+                        <!-- Add your contact form fields here -->
+                        <div class="form-row">
+                            <label for="name">Name:</label>
+                            <input maxlength="50" type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email:</label>
+                            <input maxlength="50" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message:</label>
+                            <textarea maxlength="400" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
                 </div>
-            </div>
+            </section>
+    
+            <!-- second container section -->
+            <section class="second-container">
+                <!-- Give Us Feedback and FAQ Section -->
+                <div class="feedback-form-container">
+                    <h2>Give Us Feedback</h2><br/>
+                    <form class="feedback-form">
+                        <div class="form-row">
+                            <label for="feedback">Your Feedback:</label><br/>
+                            <textarea id="feedback" name="feedback" rows="4" required></textarea>
+                        </div>
+                        <button type="submit">Submit Feedback</button>
+                    </form>
+                </div>
+                <div class="resource">
+                    <h2>Useful Resources</h2>
+                    <ul class="resources-wrapper">
+                        <li><i class="icon fa-regular fa-circle-question"></i> <div>FAQ</div></li>
+                        <li><i class="icon fa-solid fa-screwdriver-wrench"></i> <div>Desk Assembly & Programming</div></li>
+                        <li><i class="icon fa-solid fa-truck-fast"></i> <div>Shipping</div></li>
+                        <li><i class="icon fa-solid fa-shield"></i> <div>5 Years Warranty</div></li>
+                    </ul>
+                </div>
+            </section>
     
         </section>
-    <!-- Footer Section -->
-    <footer class="footer-container">
-        <!-- Footer Content -->
-        <div class="footer-content">
-            <!-- Logo Section -->
-            <div class="footer-section-img-wrapper">
-                <img src="static/img/std_logo.jpg" alt="Company Logo">
-                <img src="static/img/std_logo.jpg" alt="Standing Desk footer" />
+
+        <!-- Footer Section -->
+        <footer class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section-img-wrapper">
+                    <img src="static/img/std_logo.jpg" alt="Company Logo">
+                    <img src="static/img/std_logo.jpg" alt="Standing Desk footer"/>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rising_desks.html">Rising Desks</a></li>
+                        <li><a href="health_benefits.html">Health Benefits</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect with Us</h3>
+                    <ul class="social-media">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="rising_desks.html">Rising Desks</a></li>
-                    <li><a href="health_benefits.html">Health Benefits</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
-                </ul>
+            <div class="footer-bottom footer-section">
+                <span>&copy; 2024 Standing Desk Company. All rights reserved. | Powered by <a href="https://github.com/Winstonjames2" target="_blank">Kyaw Htet Myat Tun</a></span>
             </div>
+        </footer>
 
-            <!-- Legal -->
-            <div class="footer-section">
-                <h3>Legal</h3>
-                <ul>
-                    <li><a href="privacy_policy.html">Privacy Policy</a></li>
-                    <li><a href="terms_conditions.html">Terms & Conditions</a></li>
-                </ul>
-            </div>
-
-            <!-- Social Media -->
-            <div class="footer-section">
-                <h3>Connect with Us</h3>
-                <ul class="social-media-links">
-                    <li><a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Bottom Bar -->
-        <div class="footer-bottom-bar">
-            <p>&copy; 2023 Standing Desk Company. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-
+    </body>
 </html>
