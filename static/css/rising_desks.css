@@ -64,8 +64,7 @@
 }
 
 .second-container label:hover {
-    background-color: var(--hover_color);
-    color: var(--fg-color);
+    background-color: rgb(164, 255, 164);
 }
 
 #desk_type1,

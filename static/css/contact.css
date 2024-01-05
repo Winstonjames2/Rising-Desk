@@ -182,3 +182,7 @@ input:focus, textarea:focus {
 .icon {
     font-size: 4em;
 }
+
+button:hover {
+    background-color: #017d05;
+}

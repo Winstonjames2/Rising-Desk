@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Standing Desk Company</title>
         <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/contact.css"/>
+        <link rel="stylesheet" href="static/css/basket.css"/>
         <script src="static/icon_folder/all.min.js"></script>      <!-- font awesome for icon more info -- > https://fontawesome.com -->
     </head>
     <body>
@@ -53,91 +53,54 @@
             </section>
         </header>
 
-        <!-- Body Container -->
-        <section class="body-container">
-
-            <!-- Contact Information Section -->
-            <div class="contact-info">
-                <h2>Contact Us</h2>
-                <!-- Add your contact information here -->
-                <div class="hotlines">
-                    <div class="hotline">
-                        <h3>Sale Service</h3>
-                        <span>+123 456 789 <a class="bar" href="tel:+1234567890"><i class="fa-solid fa-phone"></i></a></span>
-                    </div><br/>
-                    <div class="hotline">
-                        <h3>Customer Service</h3>
-                        <span>+987 654 321 <a class="bar" href="tel:+987 654 321"><i class="fa-solid fa-phone"></i></a></span>
+        <div class="body-container">            
+            <h1>Your Shopping Basket <i class="fa-solid fa-cart-shopping"></i></h1>
+            <div class="basket-container">
+                <div class="basket-item-wrapper">
+                    <!-- Individual Items in the Basket -->
+                    <div class="basket-item">
+                        <div class="item-details">
+                            <img src="static/img/desk2.jpg" alt="Item Image">
+                            <div class="item-info">
+                                <h2>Standing Desk 1</h2>
+                                <span class="item-des">Electric Standing Dp with Double Drawers Height Adjustable 55"x28" Stand Up Desk with Monitor Shelf, Vintage Brown</span>
+                                <span class="price">Price: $50.00</span>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <button class="remove-item-btn">Remove</button>
+                        </div>
+                    </div>
+                    <div class="basket-item">
+                        <div class="item-details">
+                            <img src="static/img/desk4.jpg" alt="Item Image">
+                            <div class="item-info">
+                                <h2>Standing Desk 2</h2>
+                                <span class="item-des">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</span>
+                                <span class="price">Price: $40.00</span>
+                            </div>
+                        </div>
+                        <div class="item-actions">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <button class="remove-item-btn">Remove</button>
+                        </div>
                     </div>
                 </div>
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-details">
+                        <div>Subtotal: $150.00</div>
+                        <div>Shipping: $10.00</div><hr/>
+                        <div>Total: $160.00</div>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
             </div>
-            
-            <!-- sub container section -->
-            <section class="first-container">
-                
-                <!-- Subscribe Newsletter Section -->            
-                <div class="newsletter">
-                    <h2>Subscribe to Ours Newsletter</h2>
-                    <p>Stay updated with our latest news and offers.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email">
-                        <button type="submit">Subscribe</button>
-                    </form>
-                </div>
-
-                <div class="contact-social-media">
-                    <h2>Keep Contacting With Us</h2><br/>
-                    <a target="_blank" href="https://wwww.facebook.com"><i class="fa-brands fa-facebook"></i> Standing Desk Company</a><br/>
-                    <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i> Stading Desk Company</a>
-                </div>
-                    
-                <!-- Send us quick message -->
-                <div class="quick-ask-container">
-                    <h2>Quick Ask</h2>
-                    <form class="contact-form">
-                        <!-- Add your contact form fields here -->
-                        <div class="form-row">
-                            <label for="name">Name:</label>
-                            <input maxlength="50" type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="email">Email:</label>
-                            <input maxlength="50" type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-row">
-                            <label for="message">Message:</label>
-                            <textarea maxlength="400" id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        <button type="submit">Send Message</button>
-                    </form>
-                </div>
-            </section>
-    
-            <!-- second container section -->
-            <section class="second-container">
-                <!-- Give Us Feedback and FAQ Section -->
-                <div class="feedback-form-container">
-                    <h2>Give Us Feedback</h2><br/>
-                    <form class="feedback-form">
-                        <div class="form-row">
-                            <label for="feedback">Your Feedback:</label><br/>
-                            <textarea id="feedback" name="feedback" rows="4" required></textarea>
-                        </div>
-                        <button type="submit">Submit Feedback</button>
-                    </form>
-                </div>
-                <div class="resource">
-                    <h2>Useful Resources</h2>
-                    <ul class="resources-wrapper">
-                        <li><i class="icon fa-regular fa-circle-question"></i> <div>FAQ</div></li>
-                        <li><i class="icon fa-solid fa-screwdriver-wrench"></i> <div>Desk Assembly & Programming</div></li>
-                        <li><i class="icon fa-solid fa-truck-fast"></i> <div>Shipping</div></li>
-                        <li><i class="icon fa-solid fa-shield"></i> <div>5 Years Warranty</div></li>
-                    </ul>
-                </div>
-            </section>
-    
-        </section>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer-container">

@@ -1,0 +1,110 @@
+.body-container {
+    width: 90%;
+    min-height: 100vh;
+    margin: 50px auto;
+}
+
+/* Basket container styles */
+.basket-container {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.basket-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.basket-item {
+    border: 1px solid #ccc;
+    margin: 10px;
+    margin-top: 0;
+    padding: 15px;
+}
+
+.basket-item img {
+    max-width:200px;
+    height: auto;
+}
+
+.item-details {
+    display: flex;
+    align-items: center;
+}
+
+.item-info {
+    margin-left: 15px;
+}
+
+.item-des {
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Adjust the number of lines to show */
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 12px 0;
+}
+
+.item-actions {
+    margin-top: 15px;
+    float: right;
+}
+
+#quantity {
+    outline: none;
+    border: 1px solid var(--hover_color);
+    width: 50px;
+    padding: 4px;
+}
+
+.remove-item-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.remove-item-btn:hover {
+    background-color: rgb(130, 0, 0);
+}
+
+/* Order Summary styles */
+.order-summary {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: fit-content;
+}
+
+.summary-details {
+    margin: 10px auto;
+    text-wrap: nowrap;
+}
+
+.summary-details>div {
+   margin-bottom: 5px;
+}
+
+.checkout-btn {
+    background-color: var(--green);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.checkout-btn:hover {
+    background-color: #2a7b2e;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .basket-item {
+        width: 100%;
+    }
+}

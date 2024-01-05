@@ -175,6 +175,10 @@ p::before{
     display: block;
 }
 
+.basket {
+    margin-left: 5px;
+}
+
 /* footer container */
 
 .footer-container {
@@ -255,7 +259,7 @@ p::before{
 }
 
 .desk-items>.section:hover{
-    box-shadow: 0 0 8px 5px var(--hover_color);
+    box-shadow: 0 0 8px 8px var(--fg-color);
 }
 
 .desk-items img{    
@@ -303,15 +307,6 @@ p::before{
     margin: 10px;
 }
 
-.review-star>span{
-    font-size:1em;
-}
-
-.review-star>span {
-    fill: blue;
-    color: blue;
-}
-
 .s_img {
     position: relative;
 }
@@ -324,4 +319,9 @@ p::before{
     background-color: #28a745;
     padding: 5px;
 
+}
+
+/* icon */
+i::after {
+    content: "ICON"
 }
