@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Standing Desk Company</title>
         <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/basket.css"/>
+        <link rel="stylesheet" href="static/css/account.css"/>
         <script src="static/icon_folder/all.min.js"></script>      <!-- font awesome for icon more info -- > https://fontawesome.com -->
     </head>
     <body>
@@ -53,7 +53,93 @@
             </section>
         </header>
 
-
+        <div class="body-container">
+            <nav class="account-sidebar">
+              <ul>
+                <li class="active">
+                  <a href="#">
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="text">Personal Details</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class="fa-solid fa-bell"></i></span>
+                    <span class="text">Email Preferences</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class="fa fa-credit-card"></i></span>
+                    <span class="text">Payment Management</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class="fa-solid fa-clock"></i></span>
+                    <span class="text">Transactions</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class="fa fa-lock"></i></span>
+                    <span class="text">Privacy</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class="fa-solid fa-key"></i></span>
+                    <span class="text">Password & Security</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="icon"><i class="fa-solid fa-star"></i></span>
+                    <span class="text">Redeem Code</span>
+                  </a>
+                </li>
+              </ul>
+              <button class="btn btn-danger delete-account">Delete Account</button>
+            </nav>
+        
+            <main class="account-content">
+              <div class="heading">
+                <h2>Personal Details</h2>
+                <p>Manage your name and Manage your name and contact info. 
+                  These personal details are private and will not be displayed 
+                  to other users. View our <a href="terms.html">Privacy Policy</a></p>
+              </div>
+              <div class="profile-info">
+                <div class="avatar">
+                  <img src="static/img/profile_pic.png" alt="Profile Photo">
+                </div>
+                <div class="details">
+                  <section id="intro-section">
+                    <h3>Welcome, Winston James</h3>
+                  </section>
+                  <section>
+                    <label for="email" >Change Name:  </label>
+                    <button><i class="fa-solid fa-wrench"></i></button>
+                  </section>
+                  <section>
+                    <label for="email" >Email: </label>
+                    <input name="email" value="w*******3@gmail.com" disabled />
+                    <button><i class="fa-solid fa-wrench"></i></button>
+                  </section>
+                  <section>
+                    <label for="email" >Phone: </label>
+                    <input name="email" value="+123 2*****12" disabled />
+                    <button><i class="fa-solid fa-wrench"></i></button>
+                  </section>
+                </div>
+              </div>
+        
+              <div class="content-inner hidden">
+                </div>
+              <div class="content-inner hidden">
+                </div>
+            </main>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer-container">
