@@ -116,15 +116,17 @@ p::before{
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    z-index: -1;
-    opacity: 0;
+    /* z-index: -1; */
+    /* opacity: 0; */
     transition: opacity var(--transition-duration);
+    display: none;
 }
 
 .header-dropdown:hover .account-menu ,
 .header-dropdown:hover .rising-menu {
-    opacity: 1;
-    z-index: 3;
+    /* opacity: 1;
+    z-index: 3; */
+    display: block;
 }
 
 #search-icon-btn {

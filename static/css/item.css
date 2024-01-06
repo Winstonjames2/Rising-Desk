@@ -1,0 +1,133 @@
+body {
+    background-color: var(--fg-color);
+}
+
+.body-container {
+    width: 90%;
+    padding: 10px;
+    margin: 50px auto;
+    border-radius: 3%;
+}
+
+.item {    
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bg-color);
+    height: 100vh;
+    padding: 20px;
+
+}
+
+#desk-img {
+    width: 40%;
+    /* width: 400px; */
+    height: auto;
+}
+
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#product-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 50px;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+#product-images>label>img {
+    width: 80px;
+    border: 1px solid gray;
+    padding: 10px;
+    height: 80px;
+    position: relative;
+    top: 300px;
+}
+
+.main-img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 5px;
+    display: none;
+    cursor: pointer;
+}
+
+.main-img:hover {
+    width: 400px;
+    height: 400px;
+}
+
+#product-images>label {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#product-images>label>img:hover{
+    box-shadow: 0 0 5px 4px var(--green);
+
+}
+
+#r-image1:checked ~  #main-image1,
+#r-image2:checked ~  #main-image2,
+#r-image3:checked ~  #main-image3
+{
+    display:block;
+}
+
+#r-image1:not(:checked) ~  #main-image1,
+#r-image2:not(:checked) ~  #main-image2,
+#r-image3:not(:checked) ~  #main-image3
+{
+    display: none;
+}
+
+
+#item-desc {
+    margin: 40px;
+    width: 60%;
+    max-width: 900px;
+}
+
+#item-desc>* {
+    margin: 20px auto;
+}
+
+.recommend-container {
+    background-color: var(--bg-color);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.recommend-container div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.recommend-container img {
+    width: 250px;
+    height: auto;
+}
+
+.recommend-container section {
+    text-align: center;
+}
+
+.recommend-container button {
+    width: 20px;
+    height: 80px;
+    align-self: center;
+}

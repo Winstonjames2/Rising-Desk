@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Standing Desk Company</title>
         <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/basket.css"/>
+        <link rel="stylesheet" href="static/css/item.css"/>
         <script src="static/icon_folder/all.min.js"></script>      <!-- font awesome for icon more info -- > https://fontawesome.com -->
     </head>
     <body>
@@ -49,58 +49,60 @@
                         <button type="submit" class="search-button">Search</button>
                     </div>
                 </div>
-                <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="basket" href="basket.html" title="Basket"><i class="fa-solid fa-cart-shopping"></i></a>
             </section>
         </header>
 
-        <div class="body-container">            
-            <h1>Your Shopping Basket <i class="fa-solid fa-cart-shopping"></i></h1>
-            <div class="basket-container">
-                <div class="basket-item-wrapper">
-                    <!-- Individual Items in the Basket -->
-                    <a href="item.html" class="basket-item">
-                        <div class="item-details">
-                            <img src="static/img/desk2.jpg" alt="Item Image">
-                            <div class="item-info">
-                                <h2>Standing Desk 1</h2>
-                                <span class="item-des">Electric Standing Dp with Double Drawers Height Adjustable 55"x28" Stand Up Desk with Monitor Shelf, Vintage Brown</span>
-                                <span class="price">Price: $50.00</span>
-                            </div>
-                        </div>
-                        <div class="item-actions">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" value="1">
-                            <button class="remove-item-btn">Remove</button>
-                        </div>
-                    </a>
-                    <a href="item.html" class="basket-item">
-                        <div class="item-details">
-                            <img src="static/img/desk4.jpg" alt="Item Image">
-                            <div class="item-info">
-                                <h2>Standing Desk 2</h2>
-                                <span class="item-des">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</span>
-                                <span class="price">Price: $40.00</span>
-                            </div>
-                        </div>
-                        <div class="item-actions">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" value="1">
-                            <button class="remove-item-btn">Remove</button>
-                        </div>
-                    </a>
+        <main class="body-container">
+            <div class="item">
+                <div id="product-images">
+                    <input type="radio" name="r-image" id="r-image1" checked>
+                    <input type="radio" name="r-image" id="r-image2">
+                    <input type="radio" name="r-image" id="r-image3">
+                    <label for="r-image1"><img src="static/img/desk1.jpg" alt="desk 1"></label>
+                    <label for="r-image2"><img src="static/img/desk2.jpg" alt="desk 2"></label>
+                    <label for="r-image3"><img src="static/img/desk4.jpg" alt="desk 3"></label>
+
+                    <img src="static/img/desk1.jpg" alt="desk 1" class="main-img" id="main-image1">
+                    <img src="static/img/desk2.jpg" alt="desk 2" class="main-img" id="main-image2">
+                    <img src="static/img/desk4.jpg" alt="desk 3" class="main-img" id="main-image3">
                 </div>
-                <!-- Order Summary -->
-                <div class="order-summary">
-                    <h2>Order Summary</h2>
-                    <div class="summary-details">
-                        <div>Subtotal: $150.00</div>
-                        <div>Shipping: $10.00</div><hr/>
-                        <div>Total: $160.00</div>
-                    </div>
-                    <button class="checkout-btn">Proceed to Checkout</button>
+
+                <section id="item-desc">
+                    <h3>GPP D Desk</h3>
+                    <div>Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</div>
+                    <select>
+                        <option>White</option>
+                        <option>Black</option>
+                    </select>
+                    <br/>
+                    <label for="quantity">Quantity: </label><input type="number" min="0" max="999" value="1"/>
+                    <div class="price">Price: $499.99</div>
+                </section>
+            </div>
+            <div class="recommend-container">
+                <h2>MORE LIKE THIS</h2>
+                <div>
+                    <button>&#10094;</button>
+                    <section>
+                        <img src="static/img/desk8.jpg"/>
+                        <h4>Standing desk model 1</h4>
+                        <div class="price">Price: $388.88</div>
+                    </section>
+                    <section>
+                        <img src="static/img/desk8.jpg"/>
+                        <h4>Standing desk model 1</h4>
+                        <div class="price">Price: $388.88</div>
+                    </section>
+                    <section>
+                        <img src="static/img/desk8.jpg"/>
+                        <h4>Standing desk model 1</h4>
+                        <div class="price">Price: $388.88</div>
+                    </section>
+                    <button>&#10095;</button>
                 </div>
             </div>
-        </div>
+        </main>
 
         <!-- Footer Section -->
         <footer class="footer-container">
