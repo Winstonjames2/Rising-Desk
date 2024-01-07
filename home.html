@@ -11,12 +11,12 @@
     <body>
         <!-- Header Section -->
         <header class="main-header">
-            <section>
+            <a href="home.html">
                 <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
-            </section>            
+            </a>
             
             <!-- Navigation Bar -->
-            <nav>
+            <nav class="nav-bar">
                 <ul class="nav-links-wrapper">
                     <li><a class="bar" href="home.html">Home</a></li>
                     <li class="header-dropdown">
@@ -40,7 +40,7 @@
                 </ul>
             </section>
 
-            <section id="search-icon-btn">
+            <section id="header-mark-wrapper">
                 <input type="checkbox" id="search-toggle">
                 <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <div id="search-dropdown">
@@ -49,10 +49,42 @@
                         <button type="submit" class="search-button">Search</button>
                     </div>
                 </div>
-                <a class="basket" href="basket.html" title="Basket"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <input id="mini-nav-control" type="checkbox"/>
+                <label for="mini-nav-control" class="nav-open-btn"><i class="fa-solid fa-bars"></i></label>
+                
+                <nav class="mini-nav">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rising_desks.html">Rising Desks</a></li>
+                        <li><a href="health_benefits.html">Health Benefits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Login</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                        <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
+                    </ul>
+                </nav>
             </section>
         </header>
-
+        <label for="special-box-control" id="arrow-btn"><i class="fa-solid fa-star"></i>SPECIAL</label>
+        <input type="checkbox" id="special-box-control" hidden checked/>
+        <!-- special container -->
+        <div class="body-mask"></div>
+        <div class="special-container">
+            <label for="special-box-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
+            <h2>BLACK FRIDAY DEALS</h2>
+            <ul class="promo-time">
+                <li>00</li>:
+                <li>21</li>:
+                <li>54</li>Left
+            </ul>
+            <h3>Special Offers Just for You</h3>
+            <p>Explore our limited-time special offers on standing desks and accessories. Whether you're a freelancer, a remote worker, or a corporate professional, 
+                our exclusive deals are tailored to enhance your workspace at an unbeatable value. Upgrade your desk, elevate your health, and seize the opportunity to
+                create a workspace that reflects your commitment to both comfort and performance.
+            </p>
+        
+        </div>
         <!-- First Container Section -->
         <section class="first-container">
             <div class="std_img-wrapper">
@@ -63,14 +95,9 @@
             </div>
             <div class="intro-wrapper">
                 <h1 id="intro-header">Welcome to<br/> Standing Desk Company (SDC)</h1>
-                <p class="intro-text">At Standing Desk Company, we believe in transforming your workspace into a haven of comfort, productivity, and well-being. As pioneers in ergonomic solutions, 
-                    we are delighted to welcome you to a world where innovation meets design, and health meets functionality.</p>
-                
-                <!-- <h3>Special Offers Just for You</h3>
-                <p>Explore our limited-time special offers on standing desks and accessories. Whether you're a freelancer, a remote worker, or a corporate professional, 
-                    our exclusive deals are tailored to enhance your workspace at an unbeatable value. Upgrade your desk, elevate your health, and seize the opportunity to
-                     create a workspace that reflects your commitment to both comfort and performance.</p> -->
-            </div>
+                <p class="intro-text">At Standing Desk Company, we believe in transforming your workspace into a haven of comfort, productivity, and well-being. As pioneers 
+                    in ergonomic solutions, we are delighted to welcome you to a world where innovation meets design, and health meets functionality.</p>
+               </div>
         </section>
 
         <!-- Second Container Section -->
@@ -78,7 +105,7 @@
             <h2>Unlock a Healthier You</h2>
             <p>Welcome to a world where your workspace not only fuels productivity but also nurtures your well-being. Our standing desks are more than pieces of furniture; they are your gateway to a healthier lifestyle.<br/>Here's how:</p>
             
-            <div class="body-container-text">
+            <div class="body-container-content">
                 <section>
                     <p><b>Revitalize Your Posture:</b> Elevate your work experience and bid farewell to slouching. Our standing desks promote optimal posture, reducing strain on your back and neck.</p>
                     <p><b>Banish Back Pain:</b> Embrace a pain-free workday as our desks provide the support your spine deserves. Experience the joy of reduced back pain and improved comfort.</p>
@@ -93,7 +120,7 @@
             <h2>What Makes Standing Desks Different?</h2>
             <p>Discover the unique features that set our standing desks apart. Elevate your work experience and embrace a healthier way of working with our innovative solutions.</p>
 
-            <div class="body-container-text">
+            <div class="body-container-content">
                 <img class="std_imgsp body-container-img" src="static/img/exceptional_desk_img.jpg" alt="Standing Desk Different Example">
                 <section>
                     <p><b>Customizable Ergonomics:</b> Tailor your desk to fit your needs with adjustable height settings and ergonomic design.</p>
@@ -108,7 +135,7 @@
             <h2>Environmentally Friendly Choices</h2>
             <p>At Standing Desk Company, we are committed to sustainability. Explore our eco-friendly options and make a positive impact on both your health and the environment.</p>
 
-            <div class="body-container-text">
+            <div class="body-container-content">
                 <section>
                     <p><b>Sustainable Sourcing:</b> Our desks are crafted from responsibly sourced materials, minimizing environmental impact.</p>
                     <p><b>Energy Efficiency:</b> Enjoy energy-efficient features in our standing desks, contributing to a greener workplace.</p>
@@ -291,6 +318,11 @@
                     </a>
                 </div>
             </div>
+        </section>
+        
+        <section class="chat-now-wrapper">
+            <input type="checkbox" id="chat-now-control" hidden/>
+            <label for="chat-now-control" id="chat-now-control-btn"><i class="fa-solid fa-angle-up"></i> Chat</label>
         </section>
         
         <!-- Footer Section -->

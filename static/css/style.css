@@ -84,7 +84,7 @@ p::before{
     z-index:10;
 }
 
-.main-header section:first-child{
+.main-header a:first-child{
     height: 100%;
 }
 
@@ -116,25 +116,20 @@ p::before{
     padding: 10px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    /* z-index: -1; */
-    /* opacity: 0; */
-    transition: opacity var(--transition-duration);
     display: none;
 }
 
 .header-dropdown:hover .account-menu ,
 .header-dropdown:hover .rising-menu {
-    /* opacity: 1;
-    z-index: 3; */
     display: block;
 }
 
-#search-icon-btn {
+#header-mark-wrapper {
     position: relative;
     margin: 20px;
 }
 
-#search-icon-btn .search-icon {
+#header-mark-wrapper .search-icon {
     cursor: pointer;
 }
 
@@ -181,6 +176,54 @@ p::before{
     margin-left: 5px;
 }
 
+/* MINI NAV */
+.mini-nav {
+    background-color: var(--bg-color);
+    height: 80vh;
+    max-width: 800px;
+    width: 50%;
+    position: fixed;
+    top:0;
+    right: 0;
+    border-bottom-right-radius: 3px;
+    padding-left: 5px;
+    display: none;
+}
+
+.mini-nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    position: relative;
+}
+
+#mini-nav-control {
+    display: none;
+}
+
+#mini-nav-control:checked ~ .mini-nav{
+    display: block;
+}
+
+#mini-nav-control:not(:checked) ~ .mini-nav{
+    display: none;
+}
+
+.nav-open-btn {
+    display: none;
+}
+
+.nav-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: inherit;
+    border: none;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
 /* footer container */
 
 .footer-container {
@@ -212,7 +255,7 @@ p::before{
 }
 
 .footer-section-img-wrapper img {
-    max-width: 200px; /* Adjust the size of the logo */
+    max-width: 200px;
 }
 
 .footer-section h3 {
@@ -326,4 +369,47 @@ p::before{
 /* icon */
 i::after {
     content: "ICON"
+}
+
+.chat-now-wrapper {
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    
+}
+
+#chat-now-control-btn {
+    background-color: var(--green);
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.chat-box {
+    background-image: linear-gradient(rgb(52, 189, 52), rgb(255, 255, 68));
+    color: white;
+    
+}
+
+@media screen and (max-width: 890px){
+    body {
+        font-size: 0.9em;
+    }
+
+    .main-header {
+        font-size: 1.4em;
+    }
+
+    .nav-bar,.header-dropdown {
+        display: none;
+    }
+
+    .footer-section-img-wrapper img {
+        max-width: 150px;
+    }
+    .nav-open-btn {
+        display: inline;
+    }
 }

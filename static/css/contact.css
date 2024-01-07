@@ -181,6 +181,7 @@ input:focus, textarea:focus {
 
 .icon {
     font-size: 4em;
+    margin: 5px;
 }
 
 button:hover {

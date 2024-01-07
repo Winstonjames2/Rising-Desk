@@ -1,4 +1,71 @@
 /* Styling for home html */
+/* special container */
+.body-mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 90;
+    background-color: rgba(133, 133, 133, 0.567);
+}
+
+.special-container {
+    width: 80%;
+    max-width: 800px;
+    height: 55vh;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    z-index: 99;
+    text-align: center;
+    background-image: linear-gradient(60deg,rgb(46, 46, 239), rgb(255, 33, 255));
+    color: var(--bg-color);
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.promo-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.promo-time>li {
+    color: black;
+    width: 40px;
+    height: 20px;
+    background-color: var(--bg-color);
+    margin:0 8px;
+}
+
+#special-box-control:not(:checked) ~ .special-container,
+#special-box-control:not(:checked) ~ .body-mask
+{
+    display: none;
+}
+
+#arrow-btn {
+    position: absolute;
+    font-size: 0.6em;
+    display: flex;
+    align-items: center;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-image: linear-gradient(60deg,rgb(46, 46, 239), rgb(255, 33, 255));
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
 
 /* first-container section */
 .first-container{
@@ -47,11 +114,11 @@
 }
 
 #intro-header{
-    font-size: 2.5vw;
+    font-size: 2.4em;
 }
 
 .intro-text{
-    font-size: 1.2vw;
+    font-size: 1.2em;
     width: 90%;
     margin: auto;
     top: 50%;
@@ -65,7 +132,7 @@
     text-align: center;
 }
 
-.body-container-text {
+.body-container-content {
     margin: 10px;
     padding: 10px;
     background-color: var(--fg-color);
@@ -73,27 +140,27 @@
     flex-direction: row;
     justify-content: space-around;
     min-height: 450px;
-
 }
 
-.body-container-text>section {
+.body-container-content>section {
     width: 55%;
     margin-right: 20px;
     align-self: center;
 }
 
-.body-container-text>section>p {
+.body-container-content>section>p {
     margin-top: 20px;
 }
 
-.body-container-text>section>p::before {
+.body-container-content>section>p::before {
     content: none;
 }
 
 .body-container-img {
-    width: 300px;
-    height: 400px;
+    width: 280px;
+    height: 390px;
     align-self: center;
+    margin: 10px;
 }
 
 .body-container{
@@ -143,3 +210,34 @@
     text-align: center;
 }
 
+@media screen and (max-width: 890px) {
+    .first-container, .body-container-content {
+        flex-direction: column;
+    }
+
+    .body-container-content>section {
+        width: 90%;
+    }
+
+    .intro-wrapper {
+        width: 80%;
+    }
+
+    .std_img-wrapper {
+        width: 100%;
+        transform: none;
+    }
+
+    .std_img2, .std_img3, .std_img4{
+        transform: none;
+        display: none;
+    }
+
+    .std_img1 {
+        transform: none;
+        width: 80%;
+        margin: auto;
+        height: auto;
+    }
+
+}

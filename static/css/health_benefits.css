@@ -71,7 +71,6 @@
 
 .second-sub-container img{
     max-width: 30%;
-
 }
 
 .benefit-fact-wrapper {
@@ -158,4 +157,37 @@
     text-align: right;
     font-size: 0.8em;
     color: var(--green);
+}
+
+
+@media screen and (max-width: 890px) {
+    .health-benefit {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .health-benefit img {
+        min-width: 100%;
+        height: auto;
+        margin: none;
+    }
+
+    .health-benefit-content {
+        width: 100%;
+    }
+
+    .more-btn {
+        position: relative;
+        top: 3px;
+    }
+
+    
+    .second-sub-container {
+        flex-direction: column;
+    }
+
+    .second-sub-container img{
+        max-width: 50%;
+    
+    }
 }

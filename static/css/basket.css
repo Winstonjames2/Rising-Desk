@@ -27,6 +27,7 @@
 
 .basket-item img {
     max-width:200px;
+    width: 40%;
     height: auto;
 }
 
@@ -103,8 +104,17 @@
 
 
 /* Responsive styles */
-@media (max-width: 768px) {
+@media screen and (max-width: 890px) {
     .basket-item {
         width: 100%;
     }
+
+    .basket-container {
+        flex-direction: column;
+    }
+
+    .order-summary {
+        margin: auto;
+    }
 }
+

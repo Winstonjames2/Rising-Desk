@@ -11,12 +11,12 @@
     <body>
         <!-- Header Section -->
         <header class="main-header">
-            <section>
+            <a href="home.html">
                 <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
-            </section>            
+            </a>
             
             <!-- Navigation Bar -->
-            <nav>
+            <nav class="nav-bar">
                 <ul class="nav-links-wrapper">
                     <li><a class="bar" href="home.html">Home</a></li>
                     <li class="header-dropdown">
@@ -40,7 +40,7 @@
                 </ul>
             </section>
 
-            <section id="search-icon-btn">
+            <section id="header-mark-wrapper">
                 <input type="checkbox" id="search-toggle">
                 <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <div id="search-dropdown">
@@ -50,6 +50,20 @@
                     </div>
                 </div>
                 <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                <input id="mini-nav-control" type="checkbox"/>
+                <label for="mini-nav-control" class="nav-open-btn"><i class="fa-solid fa-bars"></i></label>
+                
+                <nav class="mini-nav">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="rising_desks.html">Rising Desks</a></li>
+                        <li><a href="health_benefits.html">Health Benefits</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="account.html">Login</a></li>
+                        <li><a href="basket.html">Basket</a></li>
+                        <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
+                    </ul>
+                </nav>
             </section>
         </header>
 
@@ -346,6 +360,11 @@
             </section>
         </section>
 
+        <section class="chat-now-wrapper">
+            <input type="checkbox" id="chat-now-control" hidden/>
+            <label for="chat-now-control" id="chat-now-control-btn"><i class="fa-solid fa-angle-up"></i> Chat</label>
+        </section>
+        
         <!-- Footer Section -->
         <footer class="footer-container">
             <div class="footer-content">

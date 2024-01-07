@@ -26,8 +26,7 @@
     
 }
 
-#filter-btn {
-    
+#filter-btn {    
     padding: 7px;
     position: sticky;
     top: 0;
@@ -61,6 +60,7 @@
     top: 0;
     padding: 10px;
     transition: all var(--transition-duration);
+    z-index: 8;
 }
 
 .second-container label:hover {
@@ -78,4 +78,19 @@
 #desk_type3:checked + label {
     background-color: var(--green); /* Change to your desired active color */
     color: var(--bg-color);
+}
+
+
+@media screen and (max-width: 890px) {
+    .second-container label {
+        display: block;
+    }
+    
+    #desk_type2 + label {
+        top: 40px;
+    }
+
+    #desk_type3 + label {
+        top: 80px;
+    }
 }
