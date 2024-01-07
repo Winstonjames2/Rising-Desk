@@ -1,5 +1,3 @@
-/* Add your global styles here */
-
 /* Body Container Styles */
 .body-container {
     width: 100%;
@@ -99,7 +97,7 @@
     margin: 10px;
 }
 
-input, textarea {
+input:not(:first-child), textarea {
     width: 100%;
     border: 1px solid rgb(177, 177, 177);
     border-radius: 4px;
@@ -179,7 +177,7 @@ input:focus, textarea:focus {
     text-align: center;
 }
 
-.icon {
+.fa-icon {
     font-size: 4em;
     margin: 5px;
 }

@@ -15,7 +15,7 @@
     top: 150px;
     left: 0;
     background-color: var(--green);
-    z-index: 99;
+    z-index: 5;
     padding: 10px 5px 10px 0;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
@@ -65,7 +65,7 @@
     font-weight: 600;
 }
 
-.account-sidebar .icon {
+.account-sidebar .fa-icon{
     display: inline-block;
     width: 20px;
     margin-right: 10px;
