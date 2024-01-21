@@ -8,15 +8,15 @@
         <meta name="keywords" content="standing desks, health benefits, home office, ergonomic furniture">
         <meta name="author" content="Kyaw Htet Myat Tun">
 
-        <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/contact.css"/>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/contact.css">
         <script src="static/icon_folder/all.min.js" defer></script>
     </head>
     <body>
         <!-- Header Section -->
         <header class="main-header">
             <a href="home.html">
-                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header">
             </a>
             
             <!-- Navigation Bar -->
@@ -36,15 +36,15 @@
                 </ul>
             </nav>
             
-            <section class="header-dropdown">
+            <div class="header-dropdown">
                 <a class="bar" href="account.html">Account</a>
                 <ul class="account-menu">
                     <li><a href="account.html">Login</a></li>
                     <li><a href="account.html">Register</a></li>
                 </ul>
-            </section>
+            </div>
 
-            <section id="header-mark-wrapper">
+            <div id="header-mark-wrapper">
                 <input type="checkbox" id="search-toggle">
                 <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <div id="search-dropdown">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <input id="mini-nav-control" type="checkbox"/>
+                <input id="mini-nav-control" type="checkbox">
                 <label for="mini-nav-control" class="nav-open-btn"><i class="fa-solid fa-bars"></i></label>
                 
                 <nav class="mini-nav">
@@ -65,52 +65,52 @@
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="account.html">Login</a></li>
                         <li><a href="basket.html">Basket</a></li>
-                        <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                     </ul>
+                    <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                 </nav>
-            </section>
+            </div>
         </header>
 
         <!-- Body Container -->
-        <section class="body-container">
+        <div class="body-container">
 
             <!-- Contact Information Section -->
-            <div class="contact-info">
+            <section class="contact-info">
                 <h2>Contact Us</h2>
                 <!-- Add your contact information here -->
                 <div class="hotlines">
                     <div class="hotline">
                         <h3>Sale Service</h3>
                         <span>+123 456 789 <a class="bar" href="tel:+1234567890"><i class="fa-solid fa-phone"></i></a></span>
-                    </div><br/>
+                    </div><br>
                     <div class="hotline">
                         <h3>Customer Service</h3>
-                        <span>+987 654 321 <a class="bar" href="tel:+987 654 321"><i class="fa-solid fa-phone"></i></a></span>
+                        <span>+987 654 321 <a class="bar" href="tel:+987654321"><i class="fa-solid fa-phone"></i></a></span>
                     </div>
                 </div>
-            </div>
+            </section>
             
             <!-- sub container section -->
-            <section class="first-container">
+            <div class="first-container">
                 
                 <!-- Subscribe Newsletter Section -->            
-                <div class="newsletter">
+                <section class="newsletter">
                     <h2>Subscribe to Ours Newsletter</h2>
                     <p>Stay updated with our latest news and offers.</p>
                     <form class="newsletter-form">
                         <input type="email" placeholder="Your email">
                         <button type="submit">Subscribe</button>
                     </form>
-                </div>
+                </section>
 
-                <div class="contact-social-media">
-                    <h2>Keep Contacting With Us</h2><br/>
-                    <a target="_blank" href="https://wwww.facebook.com"><i class="fa-brands fa-facebook"></i> Standing Desk Company</a><br/>
+                <section class="contact-social-media">
+                    <h2>Keep Connecting With Us</h2><br>
+                    <a target="_blank" href="https://wwww.facebook.com"><i class="fa-brands fa-facebook"></i> Standing Desk Company</a><br>
                     <a target="_blank" href="https://twitter.com/"><i class="fa-brands fa-x-twitter"></i> Stading Desk Company</a>
-                </div>
+                </section>
                     
                 <!-- Send us quick message -->
-                <div class="quick-ask-container">
+                <section class="quick-ask-container">
                     <h2>Quick Ask</h2>
                     <form class="contact-form">
                         <!-- Add your contact form fields here -->
@@ -128,23 +128,23 @@
                         </div>
                         <button type="submit">Send Message</button>
                     </form>
-                </div>
-            </section>
+                </section>
+            </div>
     
             <!-- second container section -->
-            <section class="second-container">
+            <div class="second-container">
                 <!-- Give Us Feedback and FAQ Section -->
-                <div class="feedback-form-container">
-                    <h2>Give Us Feedback</h2><br/>
+                <section class="feedback-form-container">
+                    <h2>Give Us Feedback</h2><br>
                     <form class="feedback-form">
                         <div class="form-row">
-                            <label for="feedback">Your Feedback:</label><br/>
+                            <label for="feedback">Your Feedback:</label><br>
                             <textarea id="feedback" name="feedback" rows="4" required placeholder="Enter Feedback"></textarea>
                         </div>
                         <button type="submit">Submit Feedback</button>
                     </form>
-                </div>
-                <div class="resource">
+                </section>
+                <section class="resource">
                     <h2>Useful Resources</h2>
                     <ul class="resources-wrapper">
                         <li><i class="fa-icon fa-regular fa-circle-question"></i> <div>FAQ</div></li>
@@ -152,12 +152,12 @@
                         <li><i class="fa-icon fa-solid fa-truck-fast"></i> <div>Shipping</div></li>
                         <li><i class="fa-icon fa-solid fa-shield"></i> <div>5 Years Warranty</div></li>
                     </ul>
-                </div>
-            </section>    
-        </section>
+                </section>
+            </div>    
+        </div>
         
-        <section class="chat-now-wrapper">
-            <input type="checkbox" id="chat-now-control" hidden/>
+        <div class="chat-now-wrapper">
+            <input type="checkbox" id="chat-now-control" hidden>
             <label for="chat-now-control" id="chat-now-control-btn"><i class="fa-solid fa-angle-up"></i> Chat</label>
             <div class="frame">
                 <input type="checkbox" id="cb">
@@ -174,7 +174,7 @@
                     <polyline points="119,1 40,67 43,105 69,73"></polyline>
                 </svg>
             </div>
-        </section>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer-container">
