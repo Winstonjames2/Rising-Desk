@@ -8,15 +8,15 @@
         <meta name="keywords" content="standing desks, health benefits, home office, ergonomic furniture">
         <meta name="author" content="Kyaw Htet Myat Tun">
 
-        <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/rising_desks.css"/>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/rising_desks.css">
         <script src="static/icon_folder/all.min.js" defer></script>
     </head>
     <body>
         <!-- Header Section -->
         <header class="main-header">
             <a href="home.html">
-                <img loading="lazy" class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+                <img loading="lazy" class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header">
             </a>
             
             <!-- Navigation Bar -->
@@ -36,15 +36,15 @@
                 </ul>
             </nav>
             
-            <section class="header-dropdown">
+            <div class="header-dropdown">
                 <a class="bar" href="account.html">Account</a>
                 <ul class="account-menu">
                     <li><a href="account.html">Login</a></li>
                     <li><a href="account.html">Register</a></li>
                 </ul>
-            </section>
+            </div>
 
-            <section id="header-mark-wrapper">
+            <div id="header-mark-wrapper">
                 <input type="checkbox" id="search-toggle">
                 <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <div id="search-dropdown">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <input id="mini-nav-control" type="checkbox"/>
+                <input id="mini-nav-control" type="checkbox">
                 <label for="mini-nav-control" class="nav-open-btn"><i class="fa-solid fa-bars"></i></label>
                 
                 <nav class="mini-nav">
@@ -65,14 +65,14 @@
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="account.html">Login</a></li>
                         <li><a href="basket.html">Basket</a></li>
-                        <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                     </ul>
+                    <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                 </nav>
-            </section>
+            </div>
         </header>
 
         <!-- body container -->
-        <section class="body-container">
+        <div class="body-container">
             <!-- First Container Section -->
             <section class="first-container">
                 <h1 id="intro-header">Explore Our Rising Desks Collection</h1>
@@ -81,18 +81,16 @@
             </section>
 
             <!-- Second Container Section -->
-            <section class="second-container">
+            <div class="second-container">
                 <aside class="filter-container">
                     <button id="filter-btn" title="NOTHING WILL HAPPEN"><i class="fa-solid fa-filter"></i> Filter</button>
-                    <div class="filter-box">
-                        
-                    </div>
-                </aside><br/><br/><br/>
+                    <div class="filter-box"><!-- NONE HERE --></div>
+                </aside><br><br><br>
                 <input type="radio" id="desk_type1" checked name="desk_type"><label for="desk_type1">Electric Desks</label>
                 <input type="radio" id="desk_type2" name="desk_type"><label for="desk_type2">Convertible Desk Riser</label>
                 <input type="radio" id="desk_type3" name="desk_type"><label for="desk_type3">Wall-Mounted Desks</label>
-                <br/><br/><br/><br/>
-                <section id="desk_type1-container">
+                <br><br><br><br>
+                <div id="desk_type1-container">
                     <div class="desk-items">
                         <a class="section" href="item.html">
                             <div class="image-container"><img loading="lazy" src="static/img/desk.jpg" alt="Standing Desk"></div>
@@ -197,9 +195,9 @@
                             </section>
                         </a>
                     </div>
-                </section>
+                </div>
                 
-                <section id="desk_type2-container">                
+                <div id="desk_type2-container">                
                     <div class="desk-items">
                         <a class="section" href="item.html">
                             <div class="image-container"><img loading="lazy" src="static/img/desk3.jpg" alt="Standing Desk"></div>
@@ -304,68 +302,67 @@
                             </section>
                         </a>
                     </div>
-                </section>
-                    <section class="desk_type3-container">
-                        <div class="desk-items">
-                            <a class="section" href="item.html">
-                                <div class="image-container"><img loading="lazy" src="static/img/desk6.jpg" alt="Standing Desk"></div>
-                                <section class="desk-info">
-                                    <h4>Growing D Desk</h4>
-                                    <div class="price-info">
-                                        <div class="price">$499.99</div>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star-half-stroke"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                </div>
+                <div class="desk_type3-container">
+                    <div class="desk-items">
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img loading="lazy" src="static/img/desk6.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Growing D Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
                                     </div>
-                                </section>
-                            </a>
-                            <a class="section" href="item.html">
-                                <div class="image-container"><img loading="lazy" src="static/img/desk7.jpg" alt="Standing Desk"></div>
-                                <section class="desk-info">
-                                    <h4>GPP D Desk</h4>
-                                    <div class="price-info">
-                                        <div class="price">$499.99</div>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star-half-stroke"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img loading="lazy" src="static/img/desk7.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>GPP D Desk</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
                                     </div>
-                                </section>
-                            </a>
-                            <a class="section" href="item.html">
-                                <div class="image-container"><img loading="lazy" src="static/img/desk8.jpg" alt="Standing Desk"></div>
-                                <section class="desk-info">
-                                    <h4>Smiley Cryo</h4>
-                                    <div class="price-info">
-                                        <div class="price">$499.99</div>
-                                        <div class="review-star">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-regular fa-star-half-stroke"></i>
-                                            <i class="fa-regular fa-star"></i>
-                                        </div>
-                                        <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
+                        <a class="section" href="item.html">
+                            <div class="image-container"><img loading="lazy" src="static/img/desk8.jpg" alt="Standing Desk"></div>
+                            <section class="desk-info">
+                                <h4>Smiley Cryo</h4>
+                                <div class="price-info">
+                                    <div class="price">$499.99</div>
+                                    <div class="review-star">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star-half-stroke"></i>
+                                        <i class="fa-regular fa-star"></i>
                                     </div>
-                                </section>
-                            </a>
-                        </div>
+                                    <p class="desk-content">Magellan Electric 60"W Height-Adjustable Standing Desk, Espresso Standing desk smiley</p>
+                                </div>
+                            </section>
+                        </a>
                     </div>
-                </section>
-            </section>
-        </section>
+                </div>
+            </div>
+        </div>
 
-        <section class="chat-now-wrapper">
-            <input type="checkbox" id="chat-now-control" hidden/>
+        <div class="chat-now-wrapper">
+            <input type="checkbox" id="chat-now-control" hidden>
             <label for="chat-now-control" id="chat-now-control-btn"><i class="fa-solid fa-angle-up"></i> Chat</label>
             <div class="frame">
                 <input type="checkbox" id="cb">
@@ -382,7 +379,7 @@
                     <polyline points="119,1 40,67 43,105 69,73"></polyline>
                 </svg>
             </div>
-        </section>
+        </div>
         
         <!-- Footer Section -->
         <footer class="footer-container">
