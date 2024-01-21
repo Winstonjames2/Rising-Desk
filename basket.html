@@ -8,15 +8,15 @@
         <meta name="keywords" content="standing desks, health benefits, home office, ergonomic furniture">
         <meta name="author" content="Kyaw Htet Myat Tun">
 
-        <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/basket.css"/>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/basket.css">
         <script src="static/icon_folder/all.min.js" defer></script>
     </head>
     <body>
         <!-- Header Section -->
         <header class="main-header">
             <a href="home.html">
-                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header">
             </a>
             
             <!-- Navigation Bar -->
@@ -36,15 +36,15 @@
                 </ul>
             </nav>
             
-            <section class="header-dropdown">
+            <div class="header-dropdown">
                 <a class="bar" href="account.html">Account</a>
                 <ul class="account-menu">
                     <li><a href="account.html">Login</a></li>
                     <li><a href="account.html">Register</a></li>
                 </ul>
-            </section>
+            </div>
 
-            <section id="header-mark-wrapper">
+            <div id="header-mark-wrapper">
                 <input type="checkbox" id="search-toggle">
                 <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <div id="search-dropdown">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <input id="mini-nav-control" type="checkbox"/>
+                <input id="mini-nav-control" type="checkbox">
                 <label for="mini-nav-control" class="nav-open-btn"><i class="fa-solid fa-bars"></i></label>
                 
                 <nav class="mini-nav">
@@ -65,10 +65,10 @@
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="account.html">Login</a></li>
                         <li><a href="basket.html">Basket</a></li>
-                        <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                     </ul>
+                    <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                 </nav>
-            </section>
+            </div>
         </header>
 
         <div class="body-container">            
@@ -76,7 +76,7 @@
             <div class="basket-container">
                 <div class="basket-item-wrapper">
                     <!-- Individual Items in the Basket -->
-                    <a href="item.html" class="basket-item">
+                    <div class="basket-item">
                         <div class="item-details">
                             <img loading="lazy" src="static/img/desk2.jpg" alt="Item Image">
                             <div class="item-info">
@@ -90,8 +90,8 @@
                             <input type="number" id="quantity" name="quantity" min="1" value="1">
                             <button class="remove-item-btn">Remove</button>
                         </div>
-                    </a>
-                    <a href="item.html" class="basket-item">
+                    </div>
+                    <div class="basket-item">
                         <div class="item-details">
                             <img loading="lazy" src="static/img/desk4.jpg" alt="Item Image">
                             <div class="item-info">
@@ -101,18 +101,18 @@
                             </div>
                         </div>
                         <div class="item-actions">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" name="quantity" min="1" value="1">
+                            <label for="quantity2">Quantity:</label>
+                            <input type="number" id="quantity2" name="quantity2" min="1" value="1">
                             <button class="remove-item-btn">Remove</button>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <!-- Order Summary -->
                 <div class="order-summary">
                     <h2>Order Summary</h2>
                     <div class="summary-details">
                         <div>Subtotal: $150.00</div>
-                        <div>Shipping: $10.00</div><hr/>
+                        <div>Shipping: $10.00</div><hr>
                         <div>Total: $160.00</div>
                     </div>
                     <button class="checkout-btn">Proceed to Checkout</button>
@@ -120,8 +120,8 @@
             </div>
         </div>
         
-        <section class="chat-now-wrapper">
-            <input type="checkbox" id="chat-now-control" hidden/>
+        <div class="chat-now-wrapper">
+            <input type="checkbox" id="chat-now-control" hidden>
             <label for="chat-now-control" id="chat-now-control-btn"><i class="fa-solid fa-angle-up"></i> Chat</label>
             <div class="frame">
                 <input type="checkbox" id="cb">
@@ -138,7 +138,7 @@
                     <polyline points="119,1 40,67 43,105 69,73"></polyline>
                 </svg>
             </div>
-        </section>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer-container">

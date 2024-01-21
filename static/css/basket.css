@@ -82,7 +82,7 @@
 
 .summary-details {
     margin: 10px auto;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .summary-details>div {
