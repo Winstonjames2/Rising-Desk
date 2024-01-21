@@ -4,8 +4,7 @@
     font-size: 1em;
 }
 
-.body-container>h1 {
-    font-size: 1.5vw;
+.body-container>h2 {
     text-align: center;
     background-color: var(--green);
     color: var(--bg-color);
@@ -64,7 +63,7 @@
 
 .second-sub-container {
     display: flex;
-    flex: row;
+    flex-direction: row;
     justify-content: space-around;
     
 }
@@ -169,7 +168,7 @@
     .health-benefit img {
         min-width: 100%;
         height: auto;
-        margin: none;
+        margin: 0;
     }
 
     .health-benefit-content {
