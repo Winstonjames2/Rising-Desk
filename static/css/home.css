@@ -116,7 +116,7 @@
     place-content: center;
 }
 
-#intro-header{
+.intro-wrapper>h1{
     font-size: 2.4em;
 }
 
@@ -145,17 +145,17 @@
     min-height: 450px;
 }
 
-.body-container-content>section {
+.body-container-content>div {
     width: 55%;
     margin-right: 20px;
     align-self: center;
 }
 
-.body-container-content>section>p {
+.body-container-content>div>p {
     margin-top: 20px;
 }
 
-.body-container-content>section>p::before {
+.body-container-content>div>p::before {
     content: none;
 }
 
@@ -166,17 +166,15 @@
     margin: 10px;
 }
 
-.body-container{
-    h2 {
-        font-size: 2em;
-        margin-bottom: 10px;
-    }
+.body-container>h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
 
-    p {
-        line-height: 1.5;
-        text-align: justify;
-        margin-top: 20px;
-    }
+.body-container>p {
+    line-height: 1.5;
+    text-align: justify;
+    margin-top: 20px;
 }
 
 /* Fifth Container - Featured Standing Desks */
