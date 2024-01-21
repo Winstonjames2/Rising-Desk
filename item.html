@@ -8,15 +8,15 @@
         <meta name="keywords" content="standing desks, health benefits, home office, ergonomic furniture">
         <meta name="author" content="Kyaw Htet Myat Tun">
 
-        <link rel="stylesheet" href="static/css/style.css"/>
-        <link rel="stylesheet" href="static/css/item.css"/>
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/item.css">
         <script src="static/icon_folder/all.min.js" defer></script>
     </head>  
     <body>
         <!-- Header Section -->
         <header class="main-header">
             <a href="home.html">
-                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header"/>
+                <img class="header-std_txt_img" src="static/img/std_logo.jpg" alt="Standing Desk header">
             </a>
             
             <!-- Navigation Bar -->
@@ -36,15 +36,15 @@
                 </ul>
             </nav>
             
-            <section class="header-dropdown">
+            <div class="header-dropdown">
                 <a class="bar" href="account.html">Account</a>
                 <ul class="account-menu">
                     <li><a href="account.html">Login</a></li>
                     <li><a href="account.html">Register</a></li>
                 </ul>
-            </section>
+            </div>
 
-            <section id="header-mark-wrapper">
+            <div id="header-mark-wrapper">
                 <input type="checkbox" id="search-toggle">
                 <label for="search-toggle" class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
                 <div id="search-dropdown">
@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <a class="basket" href="basket.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                <input id="mini-nav-control" type="checkbox"/>
+                <input id="mini-nav-control" type="checkbox">
                 <label for="mini-nav-control" class="nav-open-btn"><i class="fa-solid fa-bars"></i></label>
                 
                 <nav class="mini-nav">
@@ -65,10 +65,10 @@
                         <li><a href="contact.html">Contact Us</a></li>
                         <li><a href="account.html">Login</a></li>
                         <li><a href="basket.html">Basket</a></li>
-                        <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                     </ul>
+                    <label for="mini-nav-control" class="nav-close-btn"><i class="fa-solid fa-xmark"></i></label>
                 </nav>
-            </section>
+            </div>
         </header>
 
         <main class="body-container">
@@ -96,15 +96,15 @@
                         <option>White</option>
                         <option>Black</option>
                     </select>
-                    <br/>
-                    <label for="quantity">Quantity: </label><input type="number" min="0" max="999" value="1"/>
+                    <br>
+                    <label for="quantity">Quantity: </label><input id="quantity" type="number" min="0" max="999" value="1">
                     <div class="price">Price: $499.99</div>
                     <button id="add-cart-btn">ADD TO CART</button>
                 </section>
             </div>
 
-            <div class="product-des-container">
-                <h3>PRODUCT DESCRIPTION</h3><br/>
+            <section class="product-des-container">
+                <h3>PRODUCT DESCRIPTION</h3><br>
                 <p>Give your office workspace a contemporary look with this Realspace Magellan Performance electric desk. 
                     The powder-coated steel legs hold this desk steady, while the scratch-resistant surface provides added durability.
                      A built-in power station conveniently charges your laptop or phone. This Realspace Magellan Performance electric desk 
@@ -115,11 +115,11 @@
                      conducted on this product to meet specific performance requirements and safety standards set forth by the American 
                      National Standards Institute (ANSI) and the Business and Institutional Furniture Manufacturers. This product is heavy 
                      and/or oversized and may need more than one person to handle. Interested in in-home assembly? Please call our certified 
-                     and insured professional assemblers 866-388-4350 today!</p><hr/><br/>
-                <h3>Product information</h3><br/>
+                     and insured professional assemblers 866-388-4350 today!</p><hr><br>
+                <h3>Product information</h3><br>
+                <h4>Item Details</h4>
                 <table>
                     <tbody>
-                        <th><h3>Item Details</h3></th>
                         <tr>
                             <td>Brand</td>
                             <td>Realspace</td>
@@ -142,29 +142,29 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
 
-            <div class="recommend-container">
+            <section class="recommend-container">
                 <h2>MORE LIKE THIS</h2>
                 <div>
                     <button><i class="fa-solid fa-angle-left"></i></button>
                     <section>
-                        <img src="static/img/desk6.jpg"/>
+                        <img src="static/img/desk6.jpg" alt="desk image">
                         <h4>Standing desk model 1</h4>
                         <div class="price">Price: $388.88</div>
                     </section>
                     <section>
-                        <img src="static/img/desk8.jpg"/>
+                        <img src="static/img/desk8.jpg" alt="desk image">
                         <h4>Standing desk model 1</h4>
                         <div class="price">Price: $388.88</div>
                     </section>
                     <button><i class="fa-solid fa-angle-right"></i></button>
                 </div>
-            </div>
+            </section>
         </main>
         
-        <section class="chat-now-wrapper">
-            <input type="checkbox" id="chat-now-control" hidden/>
+        <div class="chat-now-wrapper">
+            <input type="checkbox" id="chat-now-control" hidden>
             <label for="chat-now-control" id="chat-now-control-btn"><i class="fa-solid fa-angle-up"></i> Chat</label>
             <div class="frame">
                 <input type="checkbox" id="cb">
@@ -181,7 +181,7 @@
                     <polyline points="119,1 40,67 43,105 69,73"></polyline>
                 </svg>
             </div>
-        </section>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer-container">
