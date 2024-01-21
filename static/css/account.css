@@ -23,8 +23,25 @@
     display: none;
 }
 
-#sidebar-open:checked ~ .account-sidebar{
+#sidebar-close-label {
+    position: fixed;
+    top: 150px;
+    left: 250px;
+    background-color: var(--green);
+    padding: 10px 5px 10px 0;
+    z-index: 99;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: var(--bg-color);
+    display: none;
+}
+
+#sidebar-open:checked ~ .account-sidebar, #sidebar-open:checked ~ #sidebar-close-label {
     display: block;
+}
+
+#sidebar-open:checked ~ #sidebar-open-label {
+    display: none;
 }
 
 .account-sidebar {
@@ -57,7 +74,7 @@
 }
 
 .account-sidebar li a:hover {
-    background-color: #f0f0f0;
+    background-color: #d6d6d6;
 }
 
 .account-sidebar li.active a {
