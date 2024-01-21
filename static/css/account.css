@@ -26,7 +26,7 @@
 #sidebar-close-label {
     position: fixed;
     top: 150px;
-    left: 250px;
+    left: 270px;
     background-color: var(--green);
     padding: 10px 5px 10px 0;
     z-index: 99;
@@ -144,7 +144,7 @@
     object-fit: cover;
 }
 
-.details section {
+.details div {
     margin-bottom: 30px;
     text-align: center;
 }
