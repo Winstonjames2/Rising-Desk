@@ -199,7 +199,8 @@ p::before{
 .mini-nav {
     background-color: var(--bg-color);
     height: 80vh;
-    max-width: 800px;
+    max-height: 400px;
+    max-width: 240px;
     width: 50%;
     position: fixed;
     top:0;
@@ -207,14 +208,16 @@ p::before{
     border-bottom-right-radius: 3px;
     padding-left: 5px;
     display: none;
+    border: 0.2px solid rgb(93, 93, 93);
 }
 
 .mini-nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 80%;
+    height: 100%;
     position: relative;
+    margin-left: 30px;
 }
 
 #mini-nav-control {
@@ -270,7 +273,7 @@ p::before{
 
 .footer-section {
     text-align: left;
-    margin: 10px;
+    margin: 8px;
 }
 
 .footer-section-img-wrapper img {
@@ -279,11 +282,11 @@ p::before{
 
 .footer-section h3 {
     color: var(--fg-color);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer-section ul li {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .footer-section a{
@@ -302,7 +305,7 @@ p::before{
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 7px;
+    padding: 9px;
     margin: 0;
 }
 
@@ -392,9 +395,8 @@ i::after {
 
 .chat-now-wrapper {
     position: fixed;
-    bottom: 0;
-    right: 5px;
-    
+    bottom: 2px;
+    right: 8px;
 }
 
 #chat-now-control-btn {
@@ -631,4 +633,14 @@ i::after {
     to {
       width: 200px;
     }
-  }
+}
+
+/* FOR samsung fold */
+@media screen and (max-width: 360px){
+    body {
+        font-size: 0.6em;
+    }
+    footer img {
+        display: none;
+    }
+}
