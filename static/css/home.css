@@ -206,8 +206,41 @@
 
 }
 
-.price-info{
+.price-info {
     text-align: center;
+}
+
+/* cookie acpt wrapper */
+.cookie-acpt-wrapper {
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    background-color: wheat;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.cookie-acpt-wrapper a {
+    text-decoration: underline;
+}
+
+.cookie-acpt-wrapper label {
+    background-color: var(--green);
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.cookie-acpt-wrapper label:hover {
+    background-color: rgb(0, 127, 0);
+}
+
+#cookie-acpt-btn:checked ~ .cookie-acpt-wrapper {
+    display: none;
 }
 
 @media screen and (max-width: 890px) {
